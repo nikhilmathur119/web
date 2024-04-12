@@ -1,0 +1,251 @@
+body
+{
+    /*background-color: rgb(252, 220, 177);*/
+    background-color: rgb(0, 0, 0);
+    padding: 0; margin: 0;
+    position: relative;
+    z-index: 9;
+    display: flex;
+    flex-direction: column;
+}
+
+body,nav
+{
+    margin: 0;
+    background-color: rgb(0, 0, 0);
+}
+
+h2
+{
+
+    text-align: center;
+    align-items: center;
+}
+.parallax
+{
+    background: url("https://giffiles.alphacoders.com/209/209159.gif");
+    background: url("https://wallpaperaccess.com/full/7270362.gif");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+    background-size: cover;
+}
+
+*, :before, :after
+{
+	box-sizing: border-box;
+	padding: 0;
+	margin: 0;
+}
+
+.hide
+{
+	display: none;
+} 
+
+
+.page__style
+{
+    height: 100vh;
+	font-family: OpenSans-Regular, sans-serif;
+	width: 100%;
+}
+
+.btn_nav
+{
+    color: #fff;
+    cursor: pointer;
+    font-family: inherit;
+    font-size: 15px;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+
+.animate_content
+{
+	animation: animate 2s ease;
+}
+
+@keyframes animate
+{
+	10%
+    {
+		transform: scale(1, 0.002);
+    }
+	35%
+    {
+		transform: scale(0.2, 0.002);
+		opacity: 1;
+    }
+	50%
+    {
+		transform: scale(0.2, 0.002);
+		opacity: .5;
+    }
+	85%
+    {
+		transform: scale(1, 0.002);
+		opacity: 1;
+    }
+	100%
+    {
+        transform: scale(1, 1);
+    }
+    
+}
+
+.fadeIn
+{
+	z-index: 10;
+}
+
+@media only screen and (max-width: 767px)
+{
+    .page__description
+        h1
+    {
+        margin-top: 100px;
+    }
+}
+
+.head
+{
+    /*background-color: rgb(249, 221, 183);*/
+    background-color: rgb(56, 71, 192);
+    background-color: rgb(30, 30, 30);
+    background-color: transparent;
+    position: sticky;
+    top: 0;
+    z-index: 9;
+    height: 100px;
+    width: 100%;
+    margin: 0 auto;
+    display: flex;
+    text-align: center;
+    align-items: center;
+    justify-content: space-between;
+    /*
+    border: solid 1px rgb(255, 255, 255) ;
+    border-top: 1px inset;*/
+    word-wrap: break-word;
+    opacity: 1;
+    animation: towardleft 1s ;
+}
+
+.logo
+{
+    width: 20%;
+    float: left;
+}
+
+.links
+{
+    width: 100%;
+}
+
+.proj
+{
+    box-shadow: 0px 0px 2px 2px  rgb(139, 218, 255);
+}
+
+.link
+{
+    height: 50px;
+    width: 150px;
+    margin-right: 20px;
+    border-bottom: 7px black inset ;
+    border-right: 7px black inset;
+    border-top: 1px inset;
+    border-left: 1px inset;
+    border-radius: 10px;
+    background-color: antiquewhite;
+    color: rgb(0, 0, 0);
+}
+
+.link:hover
+{
+    border: 3px black inset;
+    border-radius: 5px;
+}
+
+a
+{
+    margin: 20px
+}
+
+.align
+{
+    margin-top: 20px;
+}
+
+.project
+{
+    border: solid 3px black;
+    background-color: rgba(0, 0, 0, 0.593);
+    color: white;
+    width: 40%;
+    height: 100px;
+    margin-bottom: 40px;
+    margin-left: 20px;
+    position: relative;
+    display: inline-block;
+    cursor: pointer;
+}
+
+
+.project:hover
+{
+    box-shadow: 5px 5px 5px 0px rgba(0,0,0,.6);
+}
+
+.project2
+{
+    border: solid 3px black;
+    background-color: rgba(0, 0, 0, 0.593);
+    color: white;
+    width: 40%;
+    float: right;
+    margin-right: 20px;
+    height: 100px;
+    margin-bottom: 40px;
+    margin-left: 20px;
+}
+
+.project2:hover
+{
+    box-shadow: 5px 5px 5px 0px rgba(0,0,0,.6);
+}
+
+#pageMain { flex-grow: 1; }
+
+.final-footer
+{
+    height: 150px;
+    position: static;
+    background-color: rgba(255, 255, 255, 0);
+    color: whitesmoke;
+    display: flex;
+    text-align: center;
+    align-items: center;
+    justify-content: space-evenly;
+
+}
+
+.linked
+{
+    width: 100px;
+    height: 50px;
+    background: linear-gradient(to left, rgb(0, 0, 0) 50%, #ffffff 50%) right;
+    background-size: 200% 100%;
+    color: whitesmoke;
+    border:2px solid white ;
+}
+
+.linked:hover
+{
+    background-position: left;
+    transition:all .5s ease;
+    color: black;
+}

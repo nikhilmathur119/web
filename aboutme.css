@@ -1,0 +1,503 @@
+
+body
+{
+    height: 250vh;
+    /*background-color: rgb(252, 220, 177);*/
+    /*background-color: #dabfff;*/
+    background-color: rgb(250, 235, 215);
+    padding: 0; margin: 0;
+    position: relative;
+    z-index: 9;
+    display: flex;
+    flex-direction: column;
+}
+
+body,nav
+{
+    margin: 0;
+    background-color: #0089da;
+    background-color: #000000;
+}
+
+h2
+{
+
+    text-align: center;
+    align-items: center;
+}
+
+*, :before, :after
+{
+	box-sizing: border-box;
+	padding: 0;
+	margin: 0;
+}
+
+.hide
+{
+    display: none;
+}
+
+.btn_nav
+{
+    color: #fff;
+    cursor: pointer;
+    font-family: inherit;
+    font-size: 15px;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.animate_content
+{
+	animation: animate 2s ease;
+}
+
+@keyframes animate
+{
+	10%
+    {
+		transform: scale(1, 0.002);
+    }
+	35%
+    {
+		transform: scale(0.2, 0.002);
+		opacity: 1;
+    }
+	50%
+    {
+		transform: scale(0.2, 0.002);
+		opacity: 0.5;
+    }
+	85%
+    {
+		transform: scale(1, 0.002);
+		opacity: 1;
+    }
+	100%
+    {
+        transform: scale(1, 1);
+    }
+    
+}
+
+.fadeIn
+{
+    z-index: 10;
+}
+
+@media only screen and (max-width: 767px)
+{
+    .page__description
+        h1
+    {
+        margin-top: 100px;
+    }
+}
+
+.head
+{
+    /*background-color: rgb(249, 221, 183);*/
+    background-color: rgb(56, 71, 192);
+    background-color: rgb(30, 30, 30);
+    background-color: transparent;
+    position: sticky;
+    top: 0;
+    z-index: 9;
+    width: 100%;
+    margin: 0 auto;
+    display: flex;
+    text-align: center;
+    align-items: center;
+    justify-content: space-between;
+    /*
+    border: solid 1px rgb(255, 255, 255) ;
+    border-top: 1px inset;*/
+    word-wrap: break-word;
+    opacity: 1;
+    animation: towardleft 1s ;
+}
+
+.page__style
+{
+    height: 100vh;
+	font-family: OpenSans-Regular, sans-serif;
+	width: 100%;
+}
+
+.background
+{
+    background-color: #0089da;
+    height: 250vh;
+}
+
+.logo
+{
+    width: 20%;
+    float: left;
+    color: rgb(0, 0, 0);
+}
+
+.links
+{
+    margin-top: 30px;
+    width: 100%;
+    
+}
+
+.about
+{
+    box-shadow: 0px 0px 2px 2px rgb(139, 218, 255);
+}
+
+.link
+{
+    height: 50px;
+    width: 150px;
+    border-bottom: 7px black inset ;
+    border-right: 7px rgb(107, 105, 105) inset;
+    border-top: 1px inset;
+    border-left: 1px inset;
+    border-radius: 10px;
+    background-color: transparent;
+    background-color: rgb(254, 241, 213);
+    color: rgb(50, 50, 50);
+}
+
+.link:hover
+{
+    border: 3px black inset;
+    border-radius: 5px;
+}
+
+a
+{
+    margin-left: 40px;
+    margin-right: 40px;
+}
+
+:target
+{
+    background-color: black;
+}
+/*.right
+{
+    width: 60%;
+    margin-top: 30px;
+    align-items: center;
+    text-align: center;
+    float: right;
+}*/
+
+
+
+@keyframes fadein 
+{
+    0%
+    {
+        opacity: 0.4;
+    }
+    100%
+    {
+        opacity: 1;
+    }
+    
+}
+
+.backdrop
+{
+    background-color: antiquewhite;
+    z-index: 8;
+    height: 200vh;
+    margin-right: 50px;
+    margin-left: 50px;
+    margin-top: 150px;
+    animation: towardright 2s;
+}
+
+@keyframes towardright 
+{
+    0%
+    {   
+        transform: translateX(-100%);
+        opacity: 0;
+    }    
+    100%
+    {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+.photos
+{
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    height: 300px;
+}
+
+#image-track 
+{
+    display: flex;
+    gap: 4vmin;
+    position: absolute;
+    left: 5%;
+    user-select: none;
+}
+  
+  #image-track > .image 
+{
+    width: 40vmin;
+    height: 56vmin;
+    object-fit: cover;
+
+}
+
+#image2
+{
+    height: 300px;
+    width: 300px;
+
+}
+
+#image2
+{
+    height: 300px;
+    width: 300px;
+    
+}
+
+#image3
+{
+
+    height: 300px;
+    width: 300px;
+    
+}
+
+#image4
+{
+    height: 300px;
+    width: 300px;
+    
+}
+
+
+.left
+{
+    width: 100%;
+    font-size: 20px;
+    margin: 0 auto;
+}
+
+h1
+{
+    margin-left: 20px;
+}
+
+.header
+{
+    border: solid 5px #55d3f1  ;
+    box-shadow:  5px 5px 0px 0px #5c23f0 inset,0px -5px 0px 0px #a920f1 inset,-5px -5px 0px 0px #5c23f0 inset;
+    width: 100%;
+    display: flex;
+    text-align: center;
+    align-items: center;
+    font-size: 20px;
+    height: 50px;
+    font-family: "Pixelify Sans", sans-serif;
+    color: #5c23f0;
+}
+
+.education
+{
+    margin-top: 100px;
+    margin-left: 130px;
+    float: left;
+    margin-bottom: 400px;
+    height: 300px;
+    background-color: #ff89de;
+    width: 700px;
+    font-family: "Pangolin", cursive;
+    box-shadow: 10px 0px 0px 0px #5c23f0,0px -5px 0px 0px #a920f1,-5px 0px 0px 0px #a920f1,0px 10px 0px 0px #5c23f0,15px 20px 0px 0px #1256f0,10px 15px 0px 0px #1256f0,15px 5px 0px 0px #1256f0,20px 15px 0px 0px #1256f0;
+}
+
+.smalltextcontainer
+{
+    border: solid 5px #55d3f1;
+    border-bottom: solid 20px #55d3f1;
+    box-shadow: 5px 0px 0px 0px #5c23f0 inset,-5px 0px 0px 0px #5c23f0 inset,0px 5px 0px 0px #5c23f0 inset,0px -5px 0px 0px #a920f1 inset;
+    font-size: 15px;
+    color: #5c23f0;
+    width: 100%;
+    height: 250px;
+}
+
+.text
+{
+    margin: 10px;
+    position: inherit;
+    z-index: 6;
+}
+
+hr {
+    height: 2px;
+    border-color: transparent;
+    border-right-color: rgba(255, 255, 255, 0.7);
+    border-right-width: 10px;
+    position: absolute;
+    bottom: 100%;
+    transform-origin: 100% 50%;
+    animation-name: rain;
+    animation-duration: 2s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+  }
+@keyframes rain 
+{
+    from {
+     transform: rotate(90deg) translateX(0);
+    }
+    to {
+     transform: rotate(90deg) translateX(calc(230vh + 20px));
+    }
+}
+
+.skills
+{
+    margin-top: 280px;
+    height: 300px;
+    background-color: #ff89de;
+    width: 700px;
+    font-family: "Pangolin", cursive;
+    box-shadow: 10px 0px 0px 0px #5c23f0,0px -5px 0px 0px #a920f1,-5px 0px 0px 0px #a920f1,0px 10px 0px 0px #5c23f0,15px 20px 0px 0px #1256f0,10px 15px 0px 0px #1256f0,15px 5px 0px 0px #1256f0,20px 15px 0px 0px #1256f0;
+}
+
+
+.final-footer
+{
+    height: 200px;
+    margin-top: 0px;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    background-color: rgb(255, 255, 255);
+    background-color: rgb(127, 142, 255);
+    background: linear-gradient(to bottom,transparent 0%,rgb(127, 142, 255) 100%);
+    background: linear-gradient(to bottom,transparent 0%,rgba(87, 22, 193, 0.321) 50%,rgba(87, 22, 193, 0.321) 100%);
+    color: whitesmoke;
+    display: flex;
+    text-align: center;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.linked
+{
+    width: 100px;
+    height: 50px;
+    background: linear-gradient(to left, rgb(0, 0, 0) 50%, #ffffff 50%) right;
+    background-size: 200% 100%;
+    color: rgb(255, 255, 255);
+    border:2px solid white ;
+}
+
+.linked:hover
+{
+    background-position: left;
+    transition:all .5s ease;
+    color: black;
+}
+
+.palms
+{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    position: relative;
+    z-index: 7;
+}
+
+/* The switch - the box around the slider */
+.switch {
+    font-size: 17px;
+    position: relative;
+    display: inline-block;
+    width: 1.2em;
+    height: 3.3em;
+  }
+  
+  /* Hide default HTML checkbox */
+  .switch .chk {
+    opacity: 0;
+    width: 0;
+    height: 0;
+  }
+  
+  /* The slider */
+  .slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #ccc;
+    transition: .4s;
+    border-radius: 5px;
+  }
+  
+  .slider:before {
+    position: absolute;
+    content: "";
+    height: .5em;
+    width: 2.4em;
+    border-radius: 5px;
+    left: -0.6em;
+    top: 0.2em;
+    background-color: white;
+    box-shadow: 0 6px 7px rgba(0,0,0,0.3);
+    transition: .4s;
+  }
+  
+  .slider:before, .slider:after {
+    content: "";
+    display: block;
+  }
+  
+  .slider:after {
+    background: linear-gradient(transparent 50%, rgba(255, 255, 255, 0.15) 0) 0 50% / 50% 100%,
+          repeating-linear-gradient(90deg,rgb(255, 255, 255) 0,rgb(255, 255, 255),rgb(255, 255, 255) 20%,rgb(255, 255, 255) 20%,rgb(255, 255, 255) 40%) 0 50% / 50% 100%,
+          radial-gradient(circle at 50% 50%,rgb(255, 255, 255) 25%, transparent 26%);
+    background-repeat: no-repeat;
+    border: 0.25em solid transparent;
+    border-left: 0.4em solid #ffffff;
+    border-right: 0 solid transparent;
+    transition: border-left-color 0.1s 0.3s ease-out, transform 0.3s ease-out;
+    transform: translateX(-22.5%) rotate(90deg);
+    transform-origin: 25% 50%;
+    position: relative;
+    top: 0.5em;
+    left: 0.55em;
+    width: 2em;
+    height: 1em;
+    box-sizing: border-box;
+  }
+  
+  .chk:checked + .slider {
+    background-color: #ff89de;
+  }
+  
+  .chk:focus + .slider {
+    box-shadow: 0 0 1px #000000;
+  }
+  
+  .chk:checked + .slider:before {
+    transform: translateY(2.3em);
+  }
+  
+  .chk:checked + .slider:after {
+    transform: rotateZ(90deg) rotateY(180deg) translateY(0.45em) translateX(-1.4em);
+  }

@@ -1,0 +1,196 @@
+body
+{
+
+    padding: 0;
+    margin: 0;
+    /*background-color: rgb(252, 220, 177);*/
+    /*background-color: rgb(250, 235, 215);*/
+    background-color: #000000;
+    position: relative;
+    z-index: 9;
+    display: flex;
+    flex-direction: column;
+}
+
+body,nav
+{
+    margin: 0;
+    /*background-color: rgb(250, 235, 215);*/
+    
+}
+
+*, :before, :after
+{
+	box-sizing: border-box;
+	padding: 0;
+	margin: 0;
+}
+
+.hide
+{
+    display: none;
+}
+
+.btn_nav
+{
+    color: #fff;
+    cursor: pointer;
+    font-family: inherit;
+    font-size: 15px;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.animate_content
+{
+	animation: animate 2s ease;
+}
+
+@keyframes animate
+{
+	10%
+    {
+		transform: scale(1, 0.002);
+    }
+	35%
+    {
+		transform: scale(0.2, 0.002);
+		opacity: 1;
+    }
+	50%
+    {
+		transform: scale(0.2, 0.002);
+		opacity: 0.5;
+    }
+	85%
+    {
+		transform: scale(1, 0.002);
+		opacity: 1;
+    }
+	100%
+    {
+        transform: scale(1, 1);
+    }
+    
+}
+
+.fadeIn
+{
+    z-index: 10;
+}
+
+@media only screen and (max-width: 767px)
+{
+    .page__description
+        h1
+    {
+        margin-top: 100px;
+    }
+}
+
+.page__style
+{
+    height: 100vh;
+	font-family: OpenSans-Regular, sans-serif;
+	width: 100%;
+}
+
+.parallax
+{
+    height: 100vh;
+    background: url("https://wallpapercave.com/wp/wp2729921.gif");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+    background-size: cover;
+}
+
+h2
+{
+    
+    text-align: center;
+    align-items: center;
+}
+
+.head
+{
+    /*background-color: rgb(249, 221, 183);*/
+    background-color: rgb(56, 71, 192);
+    background-color: rgb(30, 30, 30);
+    background-color: transparent;
+    position: sticky;
+    top: 0;
+    z-index: 9;
+    height: 100px;
+    width: 100%;
+    margin: 0 auto;
+    display: flex;
+    text-align: center;
+    align-items: center;
+    justify-content: space-between;
+    /*
+    border: solid 1px rgb(255, 255, 255) ;
+    border-top: 1px inset;*/
+    word-wrap: break-word;
+    opacity: 1;
+    animation: towardleft 1s ;
+}
+
+.logo
+{
+    width: 20%;
+    float: left;
+}
+
+.links
+{
+    width: 100%;
+}
+
+.contacts
+{
+    /*box-shadow: 0px 0px 10px 10px  rgb(255, 212, 137);*/
+    box-shadow: 0px 0px 2px 2px rgb(139, 218, 255);
+}
+
+.link
+{
+    height: 50px;
+    width: 150px;
+    border-bottom: 7px black inset ;
+    border-right: 7px rgb(107, 105, 105) inset;
+    border-top: 1px inset;
+    border-left: 1px inset;
+    border-radius: 10px;
+    background-color: transparent;
+    background-color: rgb(254, 241, 213);
+    color: rgb(50, 50, 50);
+}
+
+.link:hover
+{
+    border: 3px black inset;
+}
+
+a
+{
+    margin-right: 40px;
+    margin-left: 40px;
+}
+
+.contactbox
+{
+    margin-left: 5vw;
+    margin-top: 80px;
+    width: 60%;
+    height: 70vh;
+    color: antiquewhite;
+    font-size: 30px;
+    font-family: "Pixelify sans",sans-serif;
+}
+
+.info
+{
+    color: #551a8b;
+}

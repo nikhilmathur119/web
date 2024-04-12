@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="aboutme.css" type="text/css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Pangolin&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Pixelify+Sans:wght@400..700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="page__style">
+        <div class="background">
+            <div id="rain-container">
+                <nav class="head">
+                    <div class="links">
+                        <a href="HOME.html" class="hom btn_nav"><button class=" hov link">HOME</button></a>
+                        <a href="project.html" class="pro btn_nav"><button class=" proj hov link">PROJECTS</button></a>
+                        <a href="ABOUTME.html" class="resume btn_nav "><button class="about link">ABOUT ME</button></a>
+                        <a href="CONTACT.html" class="contact btn_nav"><button class="hov link">CONTACT ME</button></a>
+                        <a href="C:\Users\user\Downloads\webcv.pdf" download="nikhil mathurs CV " ><button class="hov link">RESUME</button></a>
+                        <label  class="switch">
+                            <input type="checkbox" class="chk" onclick="activaterain()">
+                            <span class="slider"></span>
+                        </label>
+                    </div>
+                </nav>
+                <div style="width: 100%;margin-bottom: 200px;height: 500px;display: flex;position: relative;z-index: 1;">
+                        <div style="width: 30%;position: relative;z-index: 1;">
+                            <div class="education" id="education">
+                            <div class="header">
+                                <h1>EDUCATION.exe</h1>
+                            </div>
+                            <div class="smalltextcontainer">
+                                <p class="text">
+                                    <b>Vellore Institute of Technology</b><br>
+                                    Bachelor of Science in Computer Science in Information Security[Joined 2022]
+                                    <br>in Vellore, Tamil Nadu<br>
+                                    <b>Relevant Coursework:</b> Data Structures and Algorithms(C/C++), Object Oriented Programming(C)
+                                    Web Programming(HTML , CSS, JS,React), Design and Analysis of Algorithms(C/C++)<br>
+                                    <br>
+                                    <b>R.N.Podar School(11th-12th grade)[2020-2022]</b><br>in
+                                    Mumbai, Maharashtra
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div style="width: 20%;margin-left: 10vw;position: relative;z-index: 6;">
+                        <div class="skills">
+                            <div class="header">
+                                <h1>SKILLS.exe</h1>
+                            </div>
+                            <div class="smalltextcontainer">
+                                <p class="text">
+                                    <b>Languages:</b> C, C++, C#, Javascript , Html, css , R, Python, Java, Cypher, SQL
+                                    <br><b>Technologies:</b> React.js, ASP.NET
+                                    <br><b>Concepts:</b> Artificial Intelligence, Machine Learning, Database Normalization
+                                </p>
+                            </div>
+                        </div>
+                </div>
+            </div>
+                <br>
+                <p style="font-family: Pixelify Sans, sans-serif;width: 100%;display: flex;justify-content: space-around;">I am an avid photographer</p>
+                <div id="image-track" data-mouse-down-at="0" data-prev-percentage="0">
+                    <img class="image" draggable="false" src="C:\Users\user\Downloads\WhatsApp Image 2024-03-13 at 00.08.21.jpeg">
+                    <img class="image" draggable="false" src="C:\Users\user\Downloads\WhatsApp Image 2024-03-12 at 23.40.13.jpeg">
+                    <img class="image" draggable="false" src="C:\Users\user\Downloads\WhatsApp Image 2024-03-12 at 23.40.12.jpeg">
+                    <img class="image" draggable="false" src="C:\Users\user\Downloads\WhatsApp Image 2024-03-12 at 23.40.12 (1).jpeg">
+                </div> 
+
+
+                <!--<div class="photos">
+                    <img  id="first" style="height:300px; width:300px;" src="C:\Users\user\Downloads\WhatsApp Image 2024-03-13 at 00.08.21.jpeg">
+                    <img id="image2" src="C:\Users\user\Downloads\WhatsApp Image 2024-03-12 at 23.40.13.jpeg">
+                    <img id="image3" src="C:\Users\user\Downloads\WhatsApp Image 2024-03-12 at 23.40.12.jpeg">
+                    <img id="image4" src="C:\Users\user\Downloads\WhatsApp Image 2024-03-12 at 23.40.12 (1).jpeg">
+                </div>-->
+
+                <div class="final-footer">
+                    <footer>    
+                        <a href="https://github.com/nikhilmathur119" class="linkedin"><button class=" linked"><div class="hovers ">GIT HUB</div></button></a>
+                        <a href="https://www.linkedin.com/in/nikhil-mathur-075a83277?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" class="linkedin"><button class=" linked"><div class="hovers ">LINKEDIN</div></button></a>
+                        <a href="mailto:nikhil.mat119@gmail.com" class="linkedin"><button class=" linked"><div class="hovers">EMAIL</div></button></a>
+                    </footer>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script>
+let isRainActive = false;
+let rainElements = [];
+
+function activaterain() {
+    const switchElement = document.querySelector('.chk');
+    if (!isRainActive) {
+        // If the rain is not active, activate it
+        activateRain();
+        isRainActive = true;
+    } else {
+        // If the rain is active, stop it
+        stopRain();
+        isRainActive = false;
+    }
+}
+
+function activateRain() {
+    let hrElement;
+    let counter = 80;
+    for (let i = 0; i < counter; i++) {
+        hrElement = document.createElement("HR");
+
+        hrElement.style.left = Math.floor(Math.random() * window.innerWidth) + "px";
+        hrElement.style.animationDuration = 2 + Math.random() * 0.3 + "s";
+        hrElement.style.animationDelay = Math.random() * 5 + "s";
+
+        document.getElementById("rain-container").appendChild(hrElement);
+        rainElements.push(hrElement); // Store the rain elements
+    }
+}
+
+function stopRain() {
+    // Remove each rain element from the DOM
+    rainElements.forEach(element => {
+        element.parentNode.removeChild(element);
+    });
+    // Clear the array of rain elements
+    rainElements = [];
+}
+
+   
+
+
+
+
+        const track = document.getElementById("image-track");
+
+const handleOnDown = (e) => (track.dataset.mouseDownAt = e.clientX);
+
+const handleOnUp = () => {
+  track.dataset.mouseDownAt = "0";
+  track.dataset.prevPercentage = track.dataset.percentage;
+};
+
+const handleOnMove = (e) => {
+  if (track.dataset.mouseDownAt === "0") return;
+
+  const mouseDelta = parseFloat(track.dataset.mouseDownAt) - e.clientX,
+    maxDelta = window.innerWidth / 2;
+
+  const percentage = (mouseDelta / maxDelta) * -100,
+    nextPercentageUnconstrained =
+      parseFloat(track.dataset.prevPercentage) + percentage,
+    nextPercentage = Math.max(Math.min(nextPercentageUnconstrained, 0), -100);
+
+  track.dataset.percentage = nextPercentage;
+
+  track.animate(
+    {
+      transform: `translate(${nextPercentage}%, 0%)`,
+    },
+    { duration: 1200, fill: "forwards" }
+  );
+
+  for (const image of track.getElementsByClassName("image")) {
+    image.animate(
+      {
+        objectPosition: `${100 + nextPercentage}% center`,
+      },
+      { duration: 1200, fill: "forwards" }
+    );
+  }
+};
+
+window.onmousedown = (e) => handleOnDown(e);
+
+window.ontouchstart = (e) => handleOnDown(e.touches[0]);
+
+window.onmouseup = (e) => handleOnUp(e);
+
+window.ontouchend = (e) => handleOnUp(e.touches[0]);
+
+window.onmousemove = (e) => handleOnMove(e);
+
+window.ontouchmove = (e) => handleOnMove(e.touches[0]);
+
+    </script>
+            <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+            <script type="text/javascript" src="script.js"></script>
+</body>
+</html>

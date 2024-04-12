@@ -10,6 +10,7 @@ body
     z-index: 9;
     display: flex;
     flex-direction: column;
+    overflow-x: hidden ;
 }
 
 body,nav
@@ -319,7 +320,7 @@ h1
     margin-bottom: 400px;
     height: 300px;
     background-color: #ff89de;
-    width: 700px;
+    width: 600px;
     font-family: "Pangolin", cursive;
     box-shadow: 10px 0px 0px 0px #5c23f0,0px -5px 0px 0px #a920f1,-5px 0px 0px 0px #a920f1,0px 10px 0px 0px #5c23f0,15px 20px 0px 0px #1256f0,10px 15px 0px 0px #1256f0,15px 5px 0px 0px #1256f0,20px 15px 0px 0px #1256f0;
 }
@@ -370,7 +371,7 @@ hr {
     margin-top: 280px;
     height: 300px;
     background-color: #ff89de;
-    width: 700px;
+    width: 80%;
     font-family: "Pangolin", cursive;
     box-shadow: 10px 0px 0px 0px #5c23f0,0px -5px 0px 0px #a920f1,-5px 0px 0px 0px #a920f1,0px 10px 0px 0px #5c23f0,15px 20px 0px 0px #1256f0,10px 15px 0px 0px #1256f0,15px 5px 0px 0px #1256f0,20px 15px 0px 0px #1256f0;
 }

@@ -133,9 +133,8 @@ function stopRain() {
     // Clear the array of rain elements
     rainElements = [];
 }
-
-
-        const track = document.getElementById("image-track");
+/*
+const track = document.getElementById("image-track");
 
 const handleOnDown = (e) => (track.dataset.mouseDownAt = e.clientX);
 
@@ -185,7 +184,31 @@ window.ontouchend = (e) => handleOnUp(e.touches[0]);
 window.onmousemove = (e) => handleOnMove(e);
 
 window.ontouchmove = (e) => handleOnMove(e.touches[0]);
+*/
 
+        
+
+const track = document.getElementById("image-track");
+const maxDelta = window.innerWidth / 2;
+
+const handleOnScroll = (e) => {
+  const scrollDelta = e.deltaX;
+  const percentageDelta = (scrollDelta / maxDelta) * 25;
+
+  const nextPercentageUnconstrained =
+    parseFloat(track.dataset.prevPercentage) - percentageDelta;
+  const nextPercentage = Math.max(Math.min(nextPercentageUnconstrained, 0), -100);
+
+  track.dataset.prevPercentage = nextPercentage;
+
+  track.style.transform = `translate(${nextPercentage}%, 0%)`;
+
+  for (const image of track.getElementsByClassName("image")) {
+    image.style.objectPosition = `${100 + nextPercentage}% center`;
+  }
+};
+
+track.addEventListener("wheel", handleOnScroll);
     </script>
             <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
             <script type="text/javascript" src="script.js"></script>
